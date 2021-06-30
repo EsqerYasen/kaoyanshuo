@@ -11,9 +11,9 @@ Page({
   data: {
     currentNavtab: "0",
     imgUrls: [
-      '../../images/keanu.jpeg',
-      '../../images/avatar.jpeg',
-      '../../images/forrestGump.jpeg'
+      '../../images/icon1.jpeg',
+      '../../images/icon8.jpg',
+      '../../images/icon9.jpeg'
     ],
     indicatorDots: false,
     autoplay: true,

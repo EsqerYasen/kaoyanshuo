@@ -7,8 +7,8 @@
   width: 735rpx;
   height: 65rpx;
   padding: 12.5rpx 0 12.5rpx 15rpx;
-  background: rgb(24, 100, 20);
-  color: rgb(24, 151, 20)D;
+  background: #ecefe9;
+  color: #000000;
 }
 .container .search-left{
   flex: 8;
@@ -21,8 +21,9 @@
   font-size: 26rpx;
 }
 .search-placeholder{
-  color: rgb(85, 86, 87);
-  line-height: 20rpx;
+  color: rgb(143, 146, 150);
+  line-height: 15rpx;
+  margin-left: 5rpx;
 }
 .container .search .search-left image{
   display: inline-block;

@@ -3,7 +3,7 @@
 <scroll-view scroll-y="true" class="container"  >
   <view class="search flex-wrp"><!--搜索框开始-->
       <view class="search-left flex-item">
-          <input placeholder="搜索帖子" placeholder-class="search-placeholder" value="{{searchValue}}" auto-focus bindinput="searchValueInput" bindconfirm='start_search_db'/>
+          <input  placeholder="搜索资源" placeholder-class="search-placeholder" value="{{searchValue}}" auto-focus bindinput="searchValueInput" bindconfirm='start_search_db'/>
       </view>
       <view class="search-right flex-item" bindtap="start_search_db">
           <image src="../../images/search.png"></image>
