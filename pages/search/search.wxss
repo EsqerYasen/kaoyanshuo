@@ -7,8 +7,8 @@
   width: 735rpx;
   height: 65rpx;
   padding: 12.5rpx 0 12.5rpx 15rpx;
-  background: rgb(24, 100, 20);
-  color: rgb(24, 151, 20)D;
+  background: #ecefe9;
+  /* color: rgb(24, 151, 20)D; */
 }
 .container .search-left{
   flex: 8;

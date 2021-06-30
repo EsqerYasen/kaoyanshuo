@@ -1,13 +1,8 @@
 // pages/mine/mine.js
 
-
-
-var touchDot = 0;//触摸时的原点 
-var time = 0;// 时间记录，用于滑动时且时间小于1s则执行左右滑动 
-var interval = "";// 记录/清理时间记录 
-
-
-
+var touchDot = 0; //触摸时的原点 
+var time = 0; // 时间记录，用于滑动时且时间小于1s则执行左右滑动 
+var interval = ""; // 记录/清理时间记录 
 
 Page({
 
@@ -42,6 +37,7 @@ Page({
 
     var that = this
     _getUserInfo();
+
     function _getUserInfo() {
       wx.getUserInfo({
         success: function (res) {
@@ -127,21 +123,21 @@ Page({
     })
   },
 
-   headimgHD:function(imageUrl) {
+  headimgHD: function (imageUrl) {
     console.log('原来的头像', imageUrl);
-    imageUrl = imageUrl.split('/');        //把头像的路径切成数组
+    imageUrl = imageUrl.split('/'); //把头像的路径切成数组
 
     //把大小数值为 46 || 64 || 96 || 132 的转换为0
-    if(imageUrl[imageUrl.length - 1] && (imageUrl[imageUrl.length - 1] == 46 || imageUrl[imageUrl.length - 1] == 64 || imageUrl[imageUrl.length - 1] == 96 || imageUrl[imageUrl.length - 1] == 132)) {
-  imageUrl[imageUrl.length - 1] = 0;
-}
+    if (imageUrl[imageUrl.length - 1] && (imageUrl[imageUrl.length - 1] == 46 || imageUrl[imageUrl.length - 1] == 64 || imageUrl[imageUrl.length - 1] == 96 || imageUrl[imageUrl.length - 1] == 132)) {
+      imageUrl[imageUrl.length - 1] = 0;
+    }
 
-imageUrl = imageUrl.join('/');   //重新拼接为字符串
+    imageUrl = imageUrl.join('/'); //重新拼接为字符串
 
-console.log('高清的头像', imageUrl);
- return imageUrl;
-},
-touchStart: function (e) {
+    console.log('高清的头像', imageUrl);
+    return imageUrl;
+  },
+  touchStart: function (e) {
     touchDot = e.touches[0].pageX; // 获取触摸时的原点 
     // 使用js计时器记录时间  
     interval = setInterval(function () {
@@ -171,7 +167,7 @@ touchStart: function (e) {
     clearInterval(interval); // 清除setInterval 
     time = 0;
   },
-///////////////////////////////////////手势操作
+  ///////////////////////////////////////手势操作
   touchStart: function (e) {
     touchDot = e.touches[0].pageX; // 获取触摸时的原点 
     // 使用js计时器记录时间  
