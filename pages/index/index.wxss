@@ -1,72 +1,93 @@
 /**index.wxss**/
 @import "../../font.wxss";
-.container{
-  height: 1500rpx;
+
+.feed-item {
+  overflow: hidden;
+  /* width: 750rpx; */
+  width: 90%;
+  padding: 30rpx 30rpx 20rpx;
+  border-radius: 30rpx;
+  margin: 5rpx 0 5rpx 0;
+  background: #ffffff;
+  border-top: 1rpx solid rgb(216, 211, 211);
+  border-bottom: 1rpx solid rgb(228, 225, 225);
+  box-shadow: 0 2rpx 5rpx grey;
 }
-.container .search{
-  width: 735rpx;
+
+.container .search {
+  width: 100%;
   height: 65rpx;
-  padding: 12.5rpx 0 12.5rpx 15rpx;
-  background: #ecefe9;
+  padding: 10rpx 0 10rpx 10rpx;
   color: #000000;
 }
-.container .search-left{
+
+.container .search-left {
+  border-radius: 20rpx;
   flex: 8;
   background: rgb(255, 255, 255);
   text-align: left;
 }
-.container .search-left input{
+
+.border {
+  border: 1rpx solid rgb(228, 225, 225);
+  box-shadow: 0 1rpx 1rpx grey;
+}
+
+.container .search-left input {
   display: inline-block;
   height: 65rpx;
   font-size: 26rpx;
+  margin-left: 30rpx;
 }
-.search-placeholder{
-  color: rgb(143, 146, 150);
+
+.search-placeholder {
   line-height: 15rpx;
   margin-left: 5rpx;
 }
-.container .search .search-left image{
-  display: inline-block;
-  width: 35rpx;
-  height: 35rpx;
-  padding: 15rpx 15rpx 15rpx 20rpx;
-}
-.container .search .search-right{
+
+
+
+.container .search .search-right {
   flex: 1;
 }
-.container .search .search-right image{
+
+.container .search .search-right image {
   width: 45rpx;
   height: 45rpx;
   padding: 10rpx;
 }
 
-.container{
+.container {
   padding: 0;
   font-size: 14rpx;
-  background: #F0F4F3;
+  /* background: #F0F4F3;  //全页面背景颜色   */
   color: #000;
 }
 
 .mylabel {
-    display: inline-block;
-    height: 35rpx;
-    line-height: 30rpx;
-    padding: 10 15rpx;
-    margin: 0 8rpx;
-    font-family: PingFangSC;
-    border-radius: 2px;
-    vertical-align: middle;
-    overflow: hidden;
-    background: rgb(215, 235, 196);
-    color: rgb(144, 148, 144);
+  display: inline-block;
+  height: 35rpx;
+  line-height: 30rpx;
+  padding: 10 15rpx;
+  margin: 0 8rpx;
+  font-family: PingFangSC;
+  border-radius: 2px;
+  vertical-align: middle;
+  overflow: hidden;
+  background: rgb(215, 235, 196);
+  color: rgb(144, 148, 144);
 
-    
-  }
-.label_text{
-  
+
+}
+
+.label_text {
+
   border: 2px;
   font-size: 18rpx;
 }
 
 
 /*feed-item part is in app.wxss for multiplexing*/
+
+
+@import 'index-wxa-auto-dark.wxss'

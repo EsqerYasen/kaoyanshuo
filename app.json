@@ -17,34 +17,26 @@
   ],
   "window": {
     "backgroundTextStyle": "light",
-    "navigationBarBackgroundColor": "#000000",
+    "navigationBarBackgroundColor": "#ffffff",
     "navigationBarTitleText": "Haps Movie 💜",
-    "navigationBarTextStyle": "white",
-    "enablePullDownRefresh": true
+    "navigationBarTextStyle": "black"
   },
   "tabBar": {
     "color": "#626567",
     "selectedColor": "#0e932e",
     "backgroundColor": "#FBFBFB",
     "borderStyle": "white",
-    "font-weight": "normal",
     "list": [{
         "pagePath": "pages/index/index",
         "text": "首页",
-        "iconPath": "images/interactive.png",
-        "selectedIconPath": "images/interactive_fill.png"
-      },
-      {
-        "pagePath": "pages/material/material",
-        "text": "公告",
-        "iconPath": "images/document.png",
-        "selectedIconPath": "images/document_fill.png"
+        "iconPath": "images/movie.png",
+        "selectedIconPath": "images/movie.png"
       },
       {
         "pagePath": "pages/mine/mine",
         "text": "我的",
         "iconPath": "images/mine.png",
-        "selectedIconPath": "images/mine_fill.png"
+        "selectedIconPath": "images/mine.png"
       }
     ]
   },

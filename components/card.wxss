@@ -1,0 +1,8 @@
+.card {
+  margin: 0 auto;
+  width: 95%;
+  margin-top: 20rpx;
+  border-radius: 10rpx;
+  background-color: pink;
+  backdrop-filter: blur(10px);
+}
