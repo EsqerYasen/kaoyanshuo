@@ -89,5 +89,3 @@
 
 /*feed-item part is in app.wxss for multiplexing*/
 
-
-@import 'index-wxa-auto-dark.wxss'

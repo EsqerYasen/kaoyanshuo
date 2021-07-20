@@ -137,5 +137,3 @@
 .container .feed-item .feed-content .answer-actions .dot ::after {
   content: "•";
 }
-
-@import 'app-wxa-auto-dark.wxss'
